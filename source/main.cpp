@@ -19,6 +19,7 @@
  * p. 69-79.
  */
 
+#include "../headers/lecm.hpp"
 #include "../headers/lecm_parameters.hpp"
 
 
@@ -31,6 +32,11 @@ int main(int argc, char** argv)
         std::cerr << "Please, look at README.md file.\n";
         return EXIT_FAILURE;
     }
+
+    Graph g(param.get_graph_path());
+    Lecm lecm(param, g);
+    lecm.execute();
+    lecm.write_clustering();
 
     return EXIT_SUCCESS;
 }

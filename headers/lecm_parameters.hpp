@@ -36,10 +36,47 @@ public:
     ~Lecm_parameters() = default;
 
     /**
-     * @brief
-     * @param
-     * @param
-     * @return
+     * @brief Get the LECM [1] parameter alpha.
+     * @return double: alpha.
+     */
+    double alpha() const;
+
+    /**
+     * @brief Get the LECM [1] parameter beta.
+     * @return double: beta.
+     */
+    double beta() const;
+
+    /**
+     * @brief Get the LECM [1] parameter chi.
+     * @return double: chi.
+     */
+    double chi() const;
+
+    /**
+     * @brief Get the LECM [1] parameter epsilon.
+     * @return double: epsilon.
+     */
+    double epsilon() const;
+
+    /**
+     * @brief Get the LECM [1] parameter theta.
+     * @return double: theta.
+     */
+    double theta() const;
+
+    /**
+     * @brief .
+     * @return std::string:.
+     */
+    std::string get_graph_path() const;
+
+    /**
+     * @brief Set the parameters values from the default terminal user input.
+     * @param int: number of arguments.
+     * @param char**: arguments itself.
+     * @return bool: true if all arguments are valid parameters and were 
+     * correctly initialized. False if any input error was detected.
      */
     bool set_parameters(const int argc, char** argv);
 
@@ -51,10 +88,11 @@ private:
     std::string m_graph_path;
 
     /**
-     * @brief
+     * @brief Mapping of flags to values.
      */
     std::map<std::string, double> m_flag_val_map =
     {
+        // default values following [1]
         {"-a", 0.99},
         {"-b", 0.8},
         {"-c", 0.5},

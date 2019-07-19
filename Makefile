@@ -9,7 +9,7 @@ LDFLAGS = -s
 RM = rm -rf
 
 # -- OpenMP, filesystem and others libraries linker flags --
-LDLIBS = #-lm -fopenmp -lpthread -ldl -lstdc++fs
+LDLIBS = -fopenmp -lstdc++fs
 
 SRC_DIR = ./source
 HDR_DIR = ./headers

@@ -14,7 +14,10 @@
  */
 
 #include "../headers/lecm_parameters.hpp"
+#include <experimental/filesystem>
 
+
+/////////////////////////////// Helper functions ///////////////////////////////
 
 namespace
 {
@@ -39,8 +42,43 @@ bool is_number(const std::string &str)
 
 } // anonymous namespace
 
-
 ////////////////////////////////////////////////////////////////////////////////
+
+
+double Lecm_parameters::alpha() const
+{
+    return m_flag_val_map.at("-a");
+}
+
+
+double Lecm_parameters::beta() const
+{
+    return m_flag_val_map.at("-b");
+}
+
+
+double Lecm_parameters::chi() const
+{
+    return m_flag_val_map.at("-c");
+}
+
+
+double Lecm_parameters::epsilon() const
+{
+    return m_flag_val_map.at("-e");
+}
+
+
+double Lecm_parameters::theta() const
+{
+    return m_flag_val_map.at("-t");
+}
+
+
+std::string Lecm_parameters::get_graph_path() const
+{
+    return m_graph_path;
+}
 
 
 bool Lecm_parameters::set_parameters(const int argc, char** argv)
@@ -109,6 +147,10 @@ bool Lecm_parameters::set(const std::string &flag, const std::string &val_str)
 
 bool Lecm_parameters::set_graph_path(const std::string &path)
 {
+    if (!std::experimental::filesystem::exists(path))
+    {
+        return false;
+    }
     m_graph_path = path;
     return true;
 }
