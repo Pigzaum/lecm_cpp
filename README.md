@@ -77,4 +77,4 @@ This project is licensed under the GNU General Public License - see the [LICENSE
 
 ## References
 
-**[\[1\] Y. Gao, H. Zhang and Y. Zhang. Overlapping community detection based on conductance optimization in large-scale networks. Physica A 522 (2019) 69-79.](https://https://www.sciencedirect.com/science/article/pii/S0378437119301487)**
+**[\[1\] Y. Gao, H. Zhang and Y. Zhang. Overlapping community detection based on conductance optimization in large-scale networks. Physica A 522 (2019) 69-79.](https://www.sciencedirect.com/science/article/pii/S0378437119301487)**
