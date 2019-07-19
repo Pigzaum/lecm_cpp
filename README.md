@@ -1,12 +1,12 @@
 # A Local Expansion and Conductance Minimizing C++ implementation
 
-A C++ implementation of the Local Expansion and Conductance Minimizing (LECM) [1] algorithm. The LECM is an overlapping community detection algorithm for large-scale graphs proposed by Gao, Zhang and Zhang (2019) [1].
+A C++ implementation of the Local Expansion and Conductance Minimizing (LECM) [[1](#references)] algorithm. The LECM is an overlapping community detection algorithm for large-scale graphs proposed by Gao, Zhang and Zhang (2019) [[1](#references)].
 
-Since I am not a LECM author, I tried to made this implementation as close as possible to the algorithm description provided by the authors in [1].
+Since I am not a LECM author, I tried to made this implementation as close as possible to the algorithm description provided by the authors in [1](#references).
 
 ### Disclaimer
 
-> Note that I am not a LECM author, so this LECM version may has errors and/or discrepancies with the actual Gao, Zhang and Zhang [1] LECM algorithm.
+> Note that I am not a LECM author, so this LECM version may has errors and/or discrepancies with the actual Gao, Zhang and Zhang [[1](#references)] LECM algorithm.
 
 ## Prerequisites
 
@@ -30,7 +30,7 @@ $ ./lecm [flag] <value>
 
 ```
 
-The flags are the parameters of the LECM algorithm (see [1] for a full description of each parameter):
+The flags are the parameters of the LECM algorithm (see [[1](#references)] for a full description of each parameter):
 
 | flag | description |
 | --- | --- |
@@ -41,7 +41,7 @@ The flags are the parameters of the LECM algorithm (see [1] for a full descripti
 | -e | epsilon value |
 | -t | theta value |
 
-`-f` must to be specified. For the others flags, the algorithm can use default values following [1]:
+`-f` must to be specified. For the others flags, the algorithm can use default values following [[1](#references)]:
 
 `a = 0.99`, `b = 0.8`, `c = 0.5`, `e = 1e-4` and `t = 0.5`.
 
