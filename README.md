@@ -2,7 +2,7 @@
 
 A C++ implementation of the Local Expansion and Conductance Minimizing (LECM) [[1](#references)] algorithm. The LECM is an overlapping community detection algorithm for large-scale graphs proposed by Gao, Zhang and Zhang (2019) [[1](#references)].
 
-Since I am not a LECM author, I tried to made this implementation as close as possible to the algorithm description provided by the authors in [1](#references).
+Since I am not a LECM author, I tried to made this implementation as close as possible to the algorithm description provided by the authors in [[1](#references)].
 
 ### Disclaimer
 
